@@ -8,6 +8,9 @@ in under-resourced communities across the San Francisco Bay Area.
 The source code was obtained from a public repo. Certain segments of the codebase has been removed
 to be left as an exercise for the student.
 
+Question 1: Invicibility
+Question 2: Graphics
+
 =============
 
 An attempt to recreate the first level of Super Mario Bros.
