@@ -538,6 +538,15 @@ class Level1(tools._State):
             self.adjust_mario_for_x_collisions(collider)
 
         elif enemy:
+            ###########################################################
+            #####################  Question 1  ########################
+            ###########################################################
+            ###  What happens when we collide with an enemy?        ###
+            ###  How can we walk right past them?                   ###
+            ###  How can we kill them?                              ###
+            ###  How can we get points?                             ###
+            ###########################################################
+
             if self.mario.invincible:
                 setup.SFX['kick'].play()
                 self.game_info[c.SCORE] += 100
@@ -558,6 +567,11 @@ class Level1(tools._State):
             else:
                 self.mario.start_death_jump(self.game_info)
                 self.state = c.FROZEN
+
+            ###########################################################
+            #####################  End of Q1  #########################
+            ###########################################################
+            
 
         elif shell:
             self.adjust_mario_for_x_shell_collisions(shell)
