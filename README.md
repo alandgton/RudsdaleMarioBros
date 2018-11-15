@@ -9,7 +9,6 @@ The source code was obtained from a public repo. Certain segments of the codebas
 to be left as an exercise for the student.
 
 Question 1: Invicibility
-Question 2: Graphics
 
 =============
 
