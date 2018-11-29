@@ -1129,14 +1129,3 @@ class Mario(pg.sprite.Sprite):
             self.image = self.right_frames[self.frame_index]
         else:
             self.image = self.left_frames[self.frame_index]
-
-
-
-
-
-
-
-
-
-
-

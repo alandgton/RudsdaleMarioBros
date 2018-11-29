@@ -547,26 +547,15 @@ class Level1(tools._State):
             ###  How can we get points?                             ###
             ###########################################################
 
-            if self.mario.invincible:
+            
                 setup.SFX['kick'].play()
-                self.game_info[c.SCORE] += 100
+                self.game_info[c.SCORE] += 999999
                 self.moving_score_list.append(
                     score.Score(self.mario.rect.right - self.viewport.x,
                                 self.mario.rect.y, 100))
                 enemy.kill()
                 enemy.start_death_jump(c.RIGHT)
-                self.sprites_about_to_die_group.add(enemy)
-            elif self.mario.big:
-                setup.SFX['pipe'].play()
-                self.mario.fire = False
-                self.mario.y_vel = -1
-                self.mario.state = c.BIG_TO_SMALL
-                self.convert_fireflowers_to_mushrooms()
-            elif self.mario.hurt_invincible:
-                pass
-            else:
-                self.mario.start_death_jump(self.game_info)
-                self.state = c.FROZEN
+                
 
             ###########################################################
             #####################  End of Q1  #########################
